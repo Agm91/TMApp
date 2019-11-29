@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TalentMobileApp</string>
+
+    <string name="show_all">Show all?</string>
+
+    <string name="name_">Account Name:</string>
+    <string name="iban_">IBAN:</string>
+    <string name="balance_">Balance:</string>
+
+    <string name="as_string">%d</string>
+
+    <string name="action_share">Share</string>
+    <string name="action_see_github">See Github</string>
+    <string name="action_see_linkedin">See LinkedIn</string>
+
+    <string name="url_linkedin">https:www.linkedin.com/in/agm91</string>
+    <string name="url_github">https:www.github.com/agm91</string>
+
+    <string name="text_share">See this great dev!\nLinkedIn: https:www.linkedin.com/in/agm91\nGithub: https:www.github.com/agm91</string>
+</resources>

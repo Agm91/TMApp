@@ -1,0 +1,16 @@
+package com.agm91.tmapp.util
+
+import com.agm91.tmapp.model.Accounts
+import com.google.gson.Gson
+
+object Dummy {
+    @JvmStatic
+    fun getAccounts(): Accounts {
+        val json = getJson()
+        return Gson().fromJson(json, Accounts::class.java)
+    }
+
+    private fun getJson(): String {
+        return "{ \"accounts\": [ { \"accountBalanceInCents\": 985000, \"accountCurrency\": \"EUR\", \"accountId\": 748757694, \"accountName\": \"Hr P L G N StellingTD\", \"accountNumber\": 748757694, \"accountType\": \"PAYMENT\", \"alias\": \"\", \"isVisible\": true, \"iban\": \"NL23INGB0748757694\" }, { \"accountBalanceInCents\": 1000000, \"accountCurrency\": \"EUR\", \"accountId\": 700000027559, \"accountName\": \",\", \"accountNumber\": 748757732, \"accountType\": \"PAYMENT\", \"alias\": \"\", \"isVisible\": false, \"iban\": \"NL88INGB0748757732\" }, { \"accountBalanceInCents\": 15000, \"accountCurrency\": \"EUR\", \"accountId\": 700000027559, \"accountName\": \"\", \"accountNumber\": \"H 177-27066\", \"accountType\": \"SAVING\", \"alias\": \"G\\\\UfffdLSAVINGSdiacrits\", \"iban\": \"\", \"isVisible\": true, \"linkedAccountId\": 748757694, \"productName\": \"Oranje Spaarrekening\", \"productType\": 1000, \"savingsTargetReached\": 1, \"targetAmountInCents\": 2000 } ], \"failedAccountTypes\" : \"CREDITCARDS\", \"returnCode\" : \"OK\" }"
+    }
+}
